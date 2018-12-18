@@ -1,5 +1,12 @@
 # overall flaw in this implementation was made at the planning stage
+# using sys.arg to parse this could not allow me to use inherit windows command
+# line arguments like > or - so i had to create my own flags and system for
+# arguments. this would have been remedied by using argparse library
+# which would allow me to handle built in command line arguments
 
+
+# cat.py
+# concatenates files
 import sys
 
 files = []
